@@ -21,7 +21,7 @@
 	<body>
 		<div id="all">
 			<header>
-				<h1>PET SHOP ALEX E DANIEL</h1>
+				<h1>-PET SHOP ALEX E DANIEL-</h1>
 			</header>
 			<nav>
 				<ol>
