@@ -1,0 +1,78 @@
+body{
+	background-color: #f2eac2;
+	font-size: 12px;
+	font-family:  trebuchet, arial;
+	color: #262a40;
+} 
+
+h1{
+     text-align: center;
+     font-size: 45px;
+}
+div#all{
+	width: 1000px;
+	margin: 0 auto;
+}
+header{
+    margin-bottom: 10px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    background-image:url("imagens/LogoPet.jpg") ;
+    background-repeat: no-repeat;
+    background-position: left;
+    backgro
+    }
+
+nav, footer, aside, div#conteudo, div#conteudo1{
+	margin-bottom: 10px;
+	background-color: white;
+	padding: 20px;
+	border-radius: 10px;
+}
+nav, aside, div#conteudo, div#conteudo1{
+	min-height: 300px;
+	width: 200px;
+	float: left;
+}
+
+div#conteudo1{
+	margin-left:20px;
+	margin-right:20px;
+	width: 440px;
+        text-align:center;
+        font-size: 15px;
+
+}
+
+div#conteudo{
+	margin-left:20px;
+	margin-right:0px;
+	width: 697px;
+}
+footer{
+	clear: both;
+        text-align: center;
+        
+}
+img{
+    width:100px ;
+    height:100px;
+}
+table{
+    border-collapse:collapse;
+    width: 100%;
+}
+th{
+    height:50px;
+}
+table,th, td{
+    border: 2px solid #f2eac2 ;
+}
+td{
+    text-align: center;
+}
+label{
+    float:left;
+    width:100px;
+}
