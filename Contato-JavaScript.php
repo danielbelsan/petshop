@@ -1,18 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	
-    <!--    http://www.oficinadanet.com.br/artigo/php/php_formulario_de_contato_com_validacao
-            http://www.concatenar.com.br/php/criar-e-validar-formularios-no-php
-        
-    -->
-    
-    
+	   
 	<head>		
 		<meta  charset="utf-8">
 		<title>PET SHOP</title>
         <link href="css.css" rel="stylesheet" type="text/css"/>
-        <link href="contatoPHP.php" rel="stylesheet" type="text/css"/>
-
+		<script language = "javascript">	
+			function ValidaEmail()
+			{
+				var nome = document.forms["usuario"]["nome"].value;
+				var assunto = document.forms["usuario"]["assunto"].value;
+				var mensagem = document.forms["usuario"]["mensagem"].value;
+				var obj = eval("document.forms[0].email");
+				var txt = obj.value;
+				
+				if(nome == "")
+				{
+					alert("Informe seu nome");
+					usuario.nome.focus();
+					return false;
+				}
+				if(txt == "")
+				{
+					alert('Informe seu e-mail');
+					obj.focus();
+					return false;
+				}
+				if ((txt.length != 0) && ((txt.indexOf("@") < 1) || (txt.indexOf('.') < 7)))
+				{
+					alert('Email incorreto');
+					obj.focus();
+					return false;
+				}
+				if(assunto == ""){
+					alert("Informe seu assunto");
+					usuario.assunto.focus();
+					return false;
+				}
+				if(mensagem != "")
+				{
+					alert("Informe sua mensagem");
+					usuario.mensagem.focus();
+					return false;
+				}
+				alert("Sucesso...Sucesso Total!");
+			}
+		</script>
 	</head>
         
 	<body> 
@@ -23,6 +56,8 @@
 			<nav>
 				<ol>
                                         <li><a href="index.php">INÍCIO</a></li>
+                                        <li><a href="sobre.php">Sobre</a></li>
+					<li><a href="historia.php">História</a></li>
 					<li><a href="produtos.php">Produtos</a></li>
 					<li><a href="servicos.php">Serviços</a></li>
                                         <li><a href="contato.php">Contato</a></li>
@@ -31,7 +66,7 @@
                     
 			<div id="conteudo">
                             
-                            <form id="usuario" name="usuario" method="post" action="processa.php">
+ <form id="usuario" name="usuario" method="post">
 
         <p><label for="nome">Nome: </label>             <input type="text" name="nome" size="50"></p>
         <p><label for="email">E-mail: </label>          <input type="text" name="email" id="email" size="50"/></p>
